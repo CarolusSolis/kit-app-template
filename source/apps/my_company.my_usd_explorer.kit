@@ -103,6 +103,8 @@ template_name = "omni.usd_explorer"
 "my_company.my_usd_explorer_setup_extension" = { order = 10000 }  # This is your application setup Extensions. order = 10000 makes it run last
 "omni.kit.stage_column.variant" = {}
 "omni.kit.window.extensions" = { version = "1.4.25" }
+"omni.kit.variant.presenter" = {}
+"omni.physx.bundle" = {}
 
 [dependencies."filter:platform"."windows-x86_64"]
 "omni.kit.window.modifier.titlebar" = {version = "=105.2.16"}  # Use exact version to avoid supported target platform check
@@ -110,7 +112,7 @@ template_name = "omni.usd_explorer"
 [settings.app]
 name = "My USD Explorer"
 fastShutdown = true  # Fast shutdown by default
-useFabricSceneDelegate = true  # Turn on the Fabric scene delegate by default
+useFabricSceneDelegate = false  # Turn on the Fabric scene delegate by default
 
 [settings.app.content]
 emptyStageOnStart = true # This will create a stage during the startup process.
